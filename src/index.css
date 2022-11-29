@@ -1,0 +1,130 @@
+:root {
+   --bg-color: #f5f7fb;
+   --font-color: #293264;
+   --bg-color2: #d6dbf5;
+   --bord-color: #4d5b9e;
+   --btn-color: #f5f7fb;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   color: var(--font-color);
+}
+
+html {
+   font-size: 62.5%;
+}
+
+body {
+   background-color: var(--bg-color);
+   font-size: 1rem;
+   font-family: "Karla", sans-serif;
+}
+
+button {
+   background-color: var(--bord-color);
+   color: var(--btn-color);
+   cursor: pointer;
+}
+
+.app {
+   height: 100vh;
+   position: relative;
+   background-image: url(/public/images/blue.png),
+      url(/public/images/yellow.png);
+   background-repeat: no-repeat, no-repeat;
+   background-position: 0% 100%, 100% 0%;
+}
+
+.start {
+   position: absolute;
+   top: 30%;
+   left: 35%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.start--header {
+   font-weight: 700;
+   font-size: 4rem;
+   margin: 2rem 4rem;
+}
+
+.start--descript {
+   font-size: 3rem;
+   padding: 1rem 0;
+}
+
+.start--btn {
+   margin-top: 2rem;
+   padding: 1rem 4rem;
+   font-size: 2rem;
+   border-radius: 10px;
+   border: none;
+}
+
+.header {
+   text-align: center;
+   font-size: 5rem;
+   padding: 20px 0;
+}
+
+.questions--container {
+   min-height: 100vh;
+   box-sizing: border-box;
+   padding: 3em 6em;
+}
+
+.quiz {
+   padding: 1em 0;
+   max-width: 700px;
+   margin: 0 auto;
+   border-bottom: 0.7px solid #dbdef0;
+}
+.quiz--question {
+   font-weight: 700;
+   font-size: 2rem;
+}
+.quiz--options {
+   margin-top: 1rem;
+}
+.quiz--options button {
+   border: 0.7px solid var(--bord-color);
+   color: #293264;
+   background-color: transparent;
+   padding: 0.2em 0.7em;
+   border-radius: 7px;
+   margin-right: 1.1em;
+   font-weight: 500;
+   margin-bottom: 1rem;
+}
+.submit {
+   display: block;
+   height: 35px;
+   width: 120px;
+   text-align: center;
+   margin: 2em auto;
+}
+.submit,
+.replay {
+   /* background-color: var(--bord--color); */
+   color: var(--btn-color);
+   border: none;
+   border-radius: 10px;
+   font-weight: 600;
+}
+.scoring {
+   margin-top: 1.7em;
+   font-weight: 700;
+   font-size: 1.5rem;
+   text-align: center;
+}
+.replay {
+   margin-left: 1.2em;
+   border-radius: 10px;
+   padding: 0.5em 1.3em;
+}
